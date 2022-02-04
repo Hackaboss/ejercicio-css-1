@@ -1,0 +1,108 @@
+/*Fuente*/
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 10px;
+  margin: 10px;
+}
+
+/*CABECERA*/
+
+header {
+  background: rgb(77, 160, 255);
+  padding: 25px;
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 16px;
+}
+
+/*H2*/
+
+h2 {
+  color: rgb(77, 160, 255);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*LISTA*/
+
+ul {
+  align-content: center;
+  color: rgb(0, 0, 0);
+  margin-left: 90px;
+}
+
+li {
+  padding: 10px;
+  list-style: circle;
+}
+
+.importante {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+---/*TABLA*/--
+
+/*DIAS*/
+
+thead th {
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(77, 160, 255);
+}
+
+/*HORAS*/
+
+th {
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(0, 0, 0);
+  background: rgb(97, 171, 255);
+}
+
+tbody tr:nth-child(2) th {
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(5, 5, 5);
+  background: rgb(95, 154, 221);
+}
+
+tbody tr:nth-child(4) th {
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(5, 5, 5);
+  background: rgb(95, 154, 221);
+}
+
+table {
+  margin-left: 70px;
+  padding: 1rem;
+}
+
+table td {
+  padding: 1rem;
+  background: rgb(134, 186, 245);
+}
+
+tbody tr:nth-child(1) td {
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(5, 5, 5);
+  background: rgb(194, 221, 251);
+}
+
+#descanso {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(194, 221, 251);
+}
