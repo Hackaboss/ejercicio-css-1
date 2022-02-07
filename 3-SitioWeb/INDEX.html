@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+
+    <form action="">
+      <fieldset>
+        <legend>Datos de login</legend>
+        <ul>
+          <li>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required />
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              readonly
+              value="alguien@sitio.com"
+            />
+          </li>
+          <li>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="pass" required />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Otros datos</legend>
+        <p>
+          <label for="num">Numero</label>
+          <input type="number" id="num" name="num" disabled />
+        </p>
+        <p>
+          <label for="tel">Telefono</label>
+          <input type="tel" id="tel" name="tel" autofocus />
+        </p>
+        <p>
+          <label for="web">Web</label>
+          <input
+            type="url"
+            id="web"
+            name="web"
+            placeholder="Escribe aquí la URL de tu web"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Otro tipo de campos</legend>
+
+        <fieldset>
+          <legend>Permisos (checkbox)</legend>
+
+          <p>
+            <!-- Con el atributo checked se marca -->
+            <input checked type="checkbox" id="check" name="check" />
+            <label for="check">Acepto los términos y condiciones</label>
+          </p>
+          <p>
+            <input disabled type="checkbox" id="check2" name="check" />
+            <label for="check2">Acepto la política de privacidad</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Género (radio)</legend>
+          <ul>
+            <li>
+              <input type="radio" id="man" name="gender" required />
+              <label for="man">Hombre</label>
+            </li>
+            <li>
+              <input checked type="radio" id="woman" name="gender" />
+              <label for="woman">Mujer</label>
+            </li>
+            <li>
+              <input type="radio" id="other" name="gender" />
+              <label for="other">Otro</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Textarea</legend>
+          <label for="comentarios">Comentarios</label>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Desplegable</legend>
+          <label for="simpsons">Personaje favorito de los Simpsons</label>
+          <select name="simpsons" id="simpsons">
+            <option value="padre">Homer</option>
+            <option value="2">Marge</option>
+            <option value="">Lisa</option>
+            <option value="">Bart</option>
+            <option value="">Maggie</option>
+            <option selected value="">Ralph</option>
+          </select>
+        </fieldset>
+      </fieldset>
+
+      <!-- type="submit no hace falta ponerlo" -->
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
+      <button type="button">Click!</button>
+    </form>
+  </body>
+</html>
