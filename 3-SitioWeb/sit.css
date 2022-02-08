@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid black;
+  margin: 2rem;
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+
+  display: inline-block;
+}
+
+div {
+  background: rebeccapurple;
+}
+
+#color {
+  /* SOMBRA */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.575);
+}
+
+.img {
+  background-color: rebeccapurple;
+  background-image: url(http://source.unsplash.com/50x50);
+}
+
+.no-repeat {
+  background-repeat: no-repeat /* repeat */;
+  /*   background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat; */
+
+  background-position: right bottom -2rem;
+
+  background-size: 50%;
+}
+
+.img2 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png),
+    url(https://ak.picdn.net/shutterstoc/videos/1052931794/thumb/1.jpg);
+  background-repeat: no-repeat;
+}
+
+.cover {
+  background-size: cover;
+  background-position: right;
+}
+
+.contain {
+  background-size: contain;
+  background-position: center;
+}
+
+.def {
+  background-size: 40%, 100% 100%;
+  background-position: right bottom, center;
+}
+
+img {
+  width: 15rem;
+
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.541));
+}

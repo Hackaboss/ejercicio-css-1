@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  border-style: none;
+}
+
+/*FONDO PAGINA*/
+
+html {
+  background-image: url(/2-Flex/img/hamburguesa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*TITULOS*/
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(44, 62, 102);
+  font-weight: bold;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: rgb(44, 62, 102);
+}
+
+#person h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+fieldset {
+  text-align: center;
+}
+
+#person section {
+  display: inline-block;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#datos h1 {
+  height: 0.1rem;
+  margin: 1rem;
+  padding: 0rem;
+}
+#datos input {
+  font-style: italic;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.1rem;
+  border: solid 0.1rem;
+  margin: 1rem;
+}
+
+textarea {
+  width: 20rem;
+  height: 6rem;
+  font-style: italic;
+  border-radius: 0.1rem;
+  border: solid 0.1rem;
+}
+
+select {
+  width: 10rem;
+  height: 2.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(44, 62, 102);
+  border-radius: 0.1rem;
+  border: solid 0.1rem;
+}
+
+button {
+  margin: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 0.1rem;
+  border: solid 0.1rem;
+  color: white;
+  background-color: rgb(44, 62, 102);
+  border: none;
+}

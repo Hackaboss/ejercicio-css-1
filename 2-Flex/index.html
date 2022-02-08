@@ -9,46 +9,55 @@
   </head>
 
   <body>
-    <form>
+    <form action="GET">
       <fieldset id="person">
         <h1>PERSONALIZA TU HAMBURGUESA</h1>
         <fieldset>
           <legend><h2>Ingredientes</h2></legend>
-          <p>
+
+          <section>
             <input checked type="checkbox" id="queso" name="queso" />
             <label for="queso">Queso</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
             <input type="checkbox" id="pimiento" name="pimiento" />
             <label for="pimiento">Pimiento</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
             <input type="checkbox" id="cebolla" name="cebolla" />
             <label for="cebolla">Cebolla</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
             <input checked type="checkbox" id="jamon" name="jamon" />
             <label for="jamon">Jamon</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
             <input checked type="checkbox" id="huevo" name="huevo" />
             <label for="huevo">Huevo</label>
-          </p>
+          </section>
         </fieldset>
+
         <fieldset id="tamaño">
           <legend><h2>Tamaño</h2></legend>
-          <p>
+
+          <section>
             <input type="radio" id="pequeña" name="pequeña" />
             <label for="pequeña">Pequeña</label>
-          </p>
-          <p>
-            <input checked type="radio" id="mediana" name="mediana" />
+          </section>
+
+          <section>
+            <input checked type="radio" id="mediana" name="mediana" required />
             <label for="mediana">Mediana</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
             <input type="radio" id="grande" name="grande" />
             <label for="grande">Grande</label>
-          </p>
+          </section>
         </fieldset>
       </fieldset>
 
@@ -56,38 +65,35 @@
         <legend>
           <h1>DATOS DE ENTREGA</h1>
         </legend>
-
-        <fieldset>
+        <section>
           <h2>Nombre</h2>
-          <label for="num"></label>
+          <label for="nombre"></label>
           <input
             type="text"
-            id="num"
-            name="num"
-            disabled
+            id="nombre"
+            name="nombre"
             placeholder="Samuel rodriguez"
           />
-        </fieldset>
-
-        <fieldset>
+        </section>
+        <section>
           <h2>Direccion</h2>
           <label for="tel"></label>
           <input
             type="text"
-            id="tel"
-            name="tel"
+            id="direccion"
+            name="direccion"
             autofocus
             placeholder="Rua Real,1. A coruña"
           />
-        </fieldset>
+        </section>
 
-        <fieldset>
+        <section>
           <h2>Telefono</h2>
-          <label for="web"></label>
-          <input type="tel" id="web" name="web" placeholder="919 04 23 63" />
-        </fieldset>
+          <label for="tel"></label>
+          <input type="tel" id="tel" name="tel" placeholder="919 04 23 63" />
+        </section>
 
-        <fieldset>
+        <section>
           <h2>Instrucciones epeciales</h2>
           <textarea
             name="comentarios"
@@ -96,7 +102,7 @@
             rows="10"
             placeholder="Sin tomate"
           ></textarea>
-        </fieldset>
+        </section>
       </fieldset>
 
       <fieldset id="pago">
